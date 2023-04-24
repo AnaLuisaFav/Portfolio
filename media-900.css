@@ -74,6 +74,7 @@
 
 	.button.botao-menu.open::after {
 		content: '×';
+		font-family: sans-serif;
 	}
 
 	.sobre h2 {
