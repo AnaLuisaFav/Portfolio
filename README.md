@@ -4,6 +4,8 @@
 
 ![Portfolio (online-video-cutter com)](https://user-images.githubusercontent.com/125583157/234099185-3f957753-9df9-44fd-9f76-ea6b6f0b918e.gif)
 
+<a href="https://analuisafav.github.io/Portfolio/" target="_blank"><strong>- Clique aqui para visualizar -</strong></a>
+
 </div>
 
 *<h2>Sobre</h2>About*
