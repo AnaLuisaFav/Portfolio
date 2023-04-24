@@ -120,7 +120,9 @@ function leiaMais () {
 	var maisTexto = document.getElementById("mais")
 	var leiaMais = document.getElementById("LeiaMais")
 	var leiaMenos = document.getElementById("LeiaMenos")
-
+	var divTransicao = document.getElementById("transicao")
+	
+	divTransicao.style.height = "fit-content"
 	pontos.style.display = "none"
 	maisTexto.style.display = "inline"
 	leiaMais.style.display = "none"
@@ -132,7 +134,9 @@ function leiaMenos () {
 	var maisTexto = document.getElementById("mais")
 	var leiaMais = document.getElementById("LeiaMais")
 	var leiaMenos = document.getElementById("LeiaMenos")
-
+	var divTransicao = document.getElementById("transicao")
+	
+	divTransicao.style.height = ""
 	pontos.style.display = "inline"
 	maisTexto.style.display = "none"
 	leiaMais.style.display = "inline"
