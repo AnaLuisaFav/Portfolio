@@ -159,6 +159,7 @@ h1#titulo:after {
 	grid-template-rows: 100vh;
 	justify-content: center;
 	align-items: center;
+	padding-top: 75px;
 }
 
 .principal > div:first-child {
