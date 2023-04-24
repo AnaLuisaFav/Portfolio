@@ -6,6 +6,7 @@
 
 	.principal > div {
 		grid-template-columns: 470px;
+		padding: 0px 10px;
 	}
 
 	.principal h1 {
@@ -74,7 +75,6 @@
 
 	.button.botao-menu.open::after {
 		content: '×';
-		font-family: sans-serif;
 	}
 
 	.sobre h2 {
@@ -110,7 +110,7 @@
 	}
 
 	ul {
-		padding: 10px;
+		padding: 0px;
 	}
 
 	/* --- principal --- */
