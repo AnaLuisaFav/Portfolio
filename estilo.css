@@ -332,7 +332,7 @@ p#mais {
 	display: none;
 }
 
-button {
+.button {
 	font-family: 'Arial';
 	font-size: 1.2px;
 	font-weight: 700px;
