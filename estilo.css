@@ -39,6 +39,7 @@ nav {
 	text-align: center;
 	background: rgba(196, 196, 196, 0.11);
 	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	border-bottom: solid 1px rgba(255, 255, 255, 0.452);
 	z-index: 1;
 }
