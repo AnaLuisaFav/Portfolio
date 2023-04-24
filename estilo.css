@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+* {
+	transition: all 200ms ease-in-out;
+}
+
+body {
+	font-family: "Kanit", sans-serif;
+	background-color: #1b4681;
+	color: #c5def3;
+	margin: 0;
+	background-image: url(img/bg-2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+	color: #e9f2a2;
+}
+
+nav a {
+	color: white;
+}
+
+a:hover {
+	color: #71dbff;
+}
+
+/* -------- navegação -------- */
+
+nav {
+	overflow: hidden;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 50px;
+	text-align: center;
+	background: rgba(196, 196, 196, 0.11);
+	backdrop-filter: blur(10px);
+	border-bottom: solid 1px rgba(255, 255, 255, 0.452);
+	z-index: 1;
+}
+
+
+nav a {
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 30px;
+}
+
+nav span {
+	font-size: 3em;
+}
+
+.transicao-nav {
+	display: none;
+}
+
+
+/* -------- sobre -------- */
+
+.sobre > h2 {
+	display: none;
+}
+
+.statusH2mobile {
+	display: none;
+}
+
+
+h1#titulo:after {
+	content: '|';
+	margin-left: 5px;
+	opacity: 1;
+	animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+	0%,100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
+
+.sobre div {
+	text-align: center;
+}
+
+.sobre span {
+	color: #e9f2a2;
+}
+
+.sobre h2 {
+	margin-left: 40px;
+	margin-right: 50px;
+	text-shadow: 3px 3px 0px #131b71;
+}
+
+.sobre h2 span {
+	color: white;
+}
+
+
+/* -------- ícones sobre -------- */
+
+.icone {
+	display: inline-flex;
+	width: 50px; 
+	height: 50px;
+	margin: 15px 20px 4px -3px;
+	border-radius: 50px;
+	padding: 10px 12px;
+	background-position: center;
+	background-color: hsl(229, 57%, 11%);
+	background-repeat: no-repeat;
+}
+
+.icone:last-child{
+	margin-right: 0px;
+}
+
+.icone:hover {
+	opacity: 0.6;
+  transition: 0.3s;
+}
+
+.html {
+	background-image: url(img/html.png);
+	background-color: #44c4a1;
+}
+
+.css {
+	background-image: url(img/css.png);
+	background-color: #5db9f2;
+}
+
+.js {
+	background-image: url(img/js.png);
+	background-color: #e9f2a2;
+}
+
+.bootstrap {
+	background-image: url(img/bootstrap.png);
+	background-color: #9a7ec5;
+}
+
+/* -------- principal -------- */
+
+.principal > div {
+	display: grid;
+	gap: 5px;
+	overflow-x: hidden;
+	grid-template-columns: 600px 600px;
+	grid-template-rows: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.principal > div:first-child {
+	padding-top: 0px;
+}
+
+.principal h1 {
+	color: white;
+	text-align: center;
+	font-size: 4.2em;
+	text-shadow: 3px 3px 0px #131b71;
+	line-height: 85px;
+}
+
+.principal p {
+	font-size: 1.3em;
+}
+
+
+.imagem img {
+	position: absolute;
+	opacity: 0.2;
+	z-index: -1;
+}
+
+
+.formacao p, .github p {
+	text-align: right;
+}
+
+.formacao img {
+	width: 42%;
+	rotate: 10deg;
+	transform: rotateY(180deg);
+	right: 0px;
+	bottom: 33px;
+}
+
+.ativo {
+	color: #71dbff;
+}
+
+
+.cursos img {
+	width: 37%;
+	left: 14px;
+	bottom: 71px;
+}
+
+.github-titulo {
+	grid-column-start: 2;
+	grid-row-start: 1;
+}
+
+.github img {
+	width: 33%;
+	transform: rotateY(180deg);
+	right: 90px;
+	bottom: 71px;
+}
+
+/* ------------ repositórios ------------ */
+
+.repositorios h2 {
+	font-size: 1.2em;
+}
+
+.repositorios {
+	text-align: center;
+}
+
+.miniatura {
+	display: inline-flex;
+	border: 3px solid white;
+	border-radius: 10px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+	width: 100px;
+	height: 100px;
+	opacity: 1;
+}
+
+.miniatura a {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.miniatura:hover {
+	background-color: rgb(27 70 129 / 55%);
+	background-blend-mode: darken;
+	cursor: pointer;
+}
+
+.calc {
+	background-image: url(img/rep/calc.png);
+	position: relative;
+}
+
+.calc:before {
+	content: 'Calculadora';
+	color: white;
+	font-weight: 700;
+	top: 35px;
+	width: 100px;
+	position: absolute;
+	opacity: 0;
+	transition: opacity .2s ease;
+}
+
+.calc:hover::before {
+	opacity: 1;
+	transition: opacity .2s ease;
+	cursor: pointer;
+}
+
+.card {
+	background-image: url(img/rep/card.png);
+	position: relative;
+}
+
+.card2 {
+	background-image: url(img/rep/card2.png);
+	position: relative;
+}
+
+.card3 {
+	background-image: url(img/rep/card3.png);
+	position: relative;
+}
+
+.card:before, .card2:before, .card3:before {
+	content: 'Desafio FrontEnd Mentor';
+	color: white;
+	font-weight: 700;
+	top: 15px;
+	width: 100px;
+	position: absolute;
+	opacity: 0;
+	transition: opacity .2s ease;
+	cursor: pointer;
+}
+
+.card:hover::before, .card2:hover::before, .card3:hover::before {
+	opacity: 1;
+	transition: opacity .2s ease;
+	cursor: pointer;
+}
+
+
+/* ------------ transição ------------ */
+
+.transicao span {
+	text-align: center;
+}
+
+.transicao h1 {
+	margin-bottom: 0px;
+}
+
+.transicao img {
+	width: 42%;
+	right: 305px;
+	bottom: 11px;
+}
+
+p#inicio {
+	margin-bottom: 0px;
+}
+
+p#mais {
+	display: none;
+}
+
+button {
+	font-family: 'Arial';
+	font-size: 1.2px;
+	font-weight: 700px;
+	border: 1px solid #1b4681;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, .25);
+}
+
+.formacao > div, .cursos > div, .github > div, .transicao > div {
+	position: relative;
+}
+
+/* --------- contato --------- */ 
+
+.sociais {
+	text-align: center;
+}
+
+.sociais img {
+	width: 30px;
+	padding-right: 10px;
+}
+
+.sociais a:hover img {
+	width: 50px;
+  display: inline-block;
+}
+
+.contato h1, .sociais h1 {
+	font-size: 2em;
+	padding: 5px;
+	line-height: 0px;
+}
+
+.contato {
+	text-align: center;
+}
+
+.contato > div {
+	display: inline-flex;
+}
+
+.contato img {
+	width: 30px;
+	height: 30px;
+	padding-right: 10px;
+}
+
+.contato a {
+	color: #c5def3;
+	font-size: 1.3em;
+	line-height: 28px;
+}
+
+.contato a:hover {
+	color: #e9f2a2;
+}
+
+.icones-sociais {
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	font-size: 0.9em;
+	text-align: center;
+	padding: 5px;
+}
+
+.turn {
+	display: none;
+}
+
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+  .turn {
+    display: grid;
+    grid-template-rows: min-content;
+		text-align: center;
+		font-size: 1.2em;
+		align-content: center;
+		height: 100vh;
+  }
+
+  .turn img {
+  	width: 50px;
+  	height: 50px;
+  	bottom: -13px;
+		position: relative;
+  }
+
+  main {
+  	display: none;
+  }
+}

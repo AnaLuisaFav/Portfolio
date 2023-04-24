@@ -1,0 +1,152 @@
+@media (max-width: 900px) {
+
+	body {
+		background-image: none;
+	}
+
+	.principal > div {
+		grid-template-columns: 470px;
+	}
+
+	.principal h1 {
+		font-size: 3.3em;
+		line-height: 3.8rem;
+	}
+
+	#contato h1 {
+		font-size: 2.2em;
+	}
+
+	.menu { 
+		right: -100vw;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+
+	.icones h2 {
+		display: none;
+	}
+
+	.icones > h2.statusH2desktop {
+		display: block;
+	}
+
+	nav {
+		padding: 50px 20px;
+	}
+
+ 	.button.botao-menu { 
+		position: fixed;
+		z-index: 2;
+		top: 3rem;
+		right: 2rem;
+		font-size: 3rem;
+		line-height: 3rem;
+		width: 3rem;
+		background: #002d6c;
+		color: white;
+		text-align: center;
+		cursor: pointer;
+		border: 1px solid #315382;
+		border-radius: 6px;
+		box-shadow: 0px 0px 4px 0px #0000004a;
+	}
+
+	.button.botao-menu::after { 
+		content: '≡';
+		width: 3rem;
+		height: 3rem;
+		font-size: 3rem;
+		line-height: 3.1rem;
+		text-align: center;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	.menu.open {
+		width: 100vw;
+		position: fixed;
+		right: 0px;
+	}
+
+	.button.botao-menu.open::after {
+		content: '×';
+	}
+
+	.sobre h2 {
+		transform: scale(0.94);
+  		animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+	}
+
+	.sobre h2 span {
+		display: inline-block;
+		opacity: 0;
+		filter: blur(4px);
+	}
+
+	@keyframes scale {
+	  100% {
+	    transform: scale(1);
+	  }
+	}
+
+	@keyframes fade-in {
+	  100% {
+	    opacity: 1;
+	    filter: blur(0);
+	  }
+	}
+
+	span:nth-child(1) {
+	  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+
+	span:nth-child(2) {
+	  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+
+	ul {
+		padding: 10px;
+	}
+
+	/* --- principal --- */
+
+	.formacao p {
+		text-align: justify;
+	}
+
+	.github p {
+		text-align: justify;
+	}
+
+	.transicao {
+		text-align: justify;
+	}
+
+	.transicao h3 {
+		text-align: center;
+	}
+
+	.cursos h2 {
+		font-size: 1.3em;
+	}
+
+	.cursos img {
+		left: 307px;
+		bottom: -378px;
+	}
+
+	.github img {
+		right: -10px;
+		bottom: -221px;
+	}
+
+	.transicao img {
+		right: 3px;
+		bottom: -206px;
+	}
+
+} 

@@ -1,0 +1,150 @@
+@media (max-width: 1200px) {
+
+	.principal > div {
+		display: grid;
+		gap: 5px;
+		grid-template-columns: 650px;
+		grid-template-rows: min-content min-content;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		align-content: center;
+	}
+
+	.icones h2 {
+		display: none;
+	}
+
+	.icones > h2.statusH2desktop {
+		display: block;
+	}
+
+	.sobre h2 {
+		transform: scale(0.94);
+  		animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+	}
+
+	.sobre h2 span {
+		display: inline-block;
+		opacity: 0;
+		filter: blur(4px);
+	}
+
+	@keyframes scale {
+	  100% {
+	    transform: scale(1);
+	  }
+	}
+
+	@keyframes fade-in {
+	  100% {
+	    opacity: 1;
+	    filter: blur(0);
+	  }
+	}
+	span:nth-child(1) {
+	  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+
+	span:nth-child(2) {
+	  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	}
+
+ /* --- formacao --- */
+
+	.formacao h1 {
+		grid-row-start: 1;
+		grid-row-end: 2;
+		margin: 1rem;
+	}
+
+	.formacao p {
+		grid-row-start: 2;
+		grid-row-end: 3;
+		text-align: justify;
+		margin: 0px;
+	}
+
+	.formacao img {
+		right: 2px;
+		bottom: -216px;
+	}
+
+
+ /* --- cursos --- */
+
+ 	ul {
+ 		margin: 0px;
+ 		list-style-type: none;
+ 	}
+
+ 	.cursos {
+ 		text-align: center;
+ 	}
+
+ 	.cursos h1 {
+ 		margin: 1rem;
+ 	}
+
+ 	.cursos h2 {
+ 		margin: 0px;
+ 	}
+
+ 	.cursos p {
+ 		margin-bottom: 1rem;
+ 		text-align: justify;
+ 	}
+
+ 	.cursos img {
+ 		left: 390px;
+		bottom: -321px;
+ 	} 
+
+/* --- github --- */
+
+	.github {
+		text-align: center;
+	}
+
+	.github-titulo {
+		grid-column-start: 1;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		margin: 0px;
+	}
+
+	.github h1 {
+		margin: 1rem;
+	}
+
+	.github p {
+		margin: 0px;
+		text-align: center;
+	}
+
+	.github img {
+		right: 45px;
+		bottom: -190px;
+	}
+
+
+/* --- transição --- */
+
+	.transicao h1 {
+ 		margin: 1rem;
+ 	}
+
+ 	.transicao {
+ 		text-align: center;
+ 	}
+
+ 	.transicao h3 {
+ 		margin: 0px;
+ 	}
+
+ 	.transicao img {
+ 		right: -89px;
+		bottom: -175px;
+ 	}
+
+ } /* fim media */
