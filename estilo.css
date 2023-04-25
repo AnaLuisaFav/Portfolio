@@ -412,23 +412,31 @@ footer {
 
 
 @media screen and (orientation: landscape) and (max-width: 900px) {
-  .turn {
-    display: grid;
-    grid-template-rows: min-content;
-		text-align: center;
-		font-size: 1.2em;
-		align-content: center;
-		height: 100vh;
-  }
+	div.principal > div {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: max-content;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		height: auto;
+		padding: 0px 40px;
+		margin-bottom: 50vh;
+	}
 
-  .turn img {
-  	width: 50px;
-  	height: 50px;
-  	bottom: -13px;
-		position: relative;
-  }
+	div.principal > div:last-child {
+		margin-bottom: 20px;
+	}
 
-  main {
-  	display: none;
-  }
+	.principal h1 {
+		margin-bottom: 10px;
+	}
+
+	nav a {
+		padding: 10px;
+	}
+	div.github img {
+		right: 20%;
+		bottom: -250%;
+	}
 }
